@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 DIR="~/bin"
 if [ -d "$DIR" ]; then
-  ln -s /usr/bin/python2 ~/bin/python
+  PATH=~/bin:$PATH
 else
   mkdir ~/bin
   PATH=~/bin:$PATH
